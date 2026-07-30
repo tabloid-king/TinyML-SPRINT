@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>My first Website</title>
+        <link rel="stylesheet" href="linkToCSS" />
+        <link rel="shortcut icon" href="imades/Gemini_Generated_Image_i4g3wpi4g3wpi4g3.png">
+    </head>
+    <body>
+       
+        <button onclick="doSomething()" style="font-size: 25px; background-color: gray; color: lightblue;
+        border-radius: 12px; border-color: border-style: dashed;" >click me</button>
+    
+
+        <p id ="greeting">Hello</p>
+
+        <script>
+            function doSomething(){
+                document.getElementById("greeting").innerHTML ="Goodbye"
+
+            }
+        </script>
+</body>
+
+
+</html>
