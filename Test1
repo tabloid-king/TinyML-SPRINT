@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>My first Website</title>
-        <link rel="stylesheet" href="linkToCSS" />
-        <link rel="shortcut icon" href="imades/Gemini_Generated_Image_i4g3wpi4g3wpi4g3.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My First Website</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="images/Gemini_Generated_Image_i4g3wpi4g3wpi4g3.png" />
     </head>
-    <body>
+    <body style="font-family: Arial, sans-serif; padding: 20px;">
        
-        <button onclick="doSomething()" style="font-size: 25px; background-color: gray; color: lightblue;
-        border-radius: 12px; border-color: border-style: dashed;" >click me</button>
-    
+        <button 
+            onclick="toggleGreeting()" 
+            style="font-size: 20px; background-color: #4a5568; color: #e2e8f0; padding: 10px 20px; border-radius: 12px; border: 2px dashed #90cdf4; cursor: pointer;">
+            Click me
+        </button>
 
-        <p id ="greeting">Hello</p>
+        <p id="greeting" style="font-size: 24px; font-weight: bold; margin-top: 20px;">Hello</p>
 
         <script>
-            function doSomething(){
-                document.getElementById("greeting").innerHTML ="Goodbye"
-
+            function toggleGreeting() {
+                const greetingElement = document.getElementById("greeting");
+                if (greetingElement.innerHTML === "Hello") {
+                    greetingElement.innerHTML = "Goodbye";
+                } else {
+                    greetingElement.innerHTML = "Hello";
+                }
             }
         </script>
-</body>
-
-
+    </body>
 </html>
